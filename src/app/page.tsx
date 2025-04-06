@@ -10,7 +10,7 @@ import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <main>
+    <main className="mx-auto">
       <Header />
       <Hero />
       <Stats />

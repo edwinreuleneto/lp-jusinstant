@@ -76,11 +76,11 @@ const items = [
 
 export const Situations = () => {
   return (
-    <section className="w-full py-20 pb-32 bg-gradient-to-t from-[#F8FAFC] to-transparent ">
-      <div className="container mx-auto px-6 lg:px-8">
+    <section className="w-full py-20 pb-32 bg-gradient-to-t from-[#F8FAFC] to-transparent">
+      <div className="xl:max-w-[1380px] mx-auto w-screen px-4 lg:px-8">
         {/* Cabeçalho */}
         <motion.div
-          className="text-center mx-auto max-w-3xl"
+          className="text-center mx-auto w-full"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -96,7 +96,7 @@ export const Situations = () => {
 
         {/* Grid com blocos */}
         <motion.div
-          className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-20"
+          className="mt-20 w-full px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:px-0 lg:max-w-[1180px] md:mx-auto"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}

@@ -9,7 +9,7 @@ export function Header() {
   return (
     <BlurFade duration={1} className="fixed left-0 top-0 z-50 w-full">
       <header className="fixed left-0 top-0 z-50 w-full border-b border-gray-100 bg-white">
-        <div className="mx-auto flex h-16 container items-center justify-between sm:px-6 lg:px-8 px-8">
+        <div className="mx-auto flex h-16 xl:max-w-[1380px] w-screen items-center justify-between sm:px-6 lg:px-8 px-8">
           {/* Logo / Branding */}
           <div className="flex items-center">
             <Link

@@ -11,11 +11,11 @@ export const Stats = () => {
   ];
 
   return (
-    <section className="py-14 pb-14 bg-[#F2F8F7] border-t border-b border-[#e1f1ee]">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto lg:max-w-none">
+    <section className="border-y border-[#e1f1ee] bg-[#F2F8F7] py-14 sm:py-20">
+      <div className="xl:max-w-[1380px] mx-auto w-screen px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto">
           <motion.dl
-            className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 text-center"
+            className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 text-center"
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -38,10 +38,12 @@ export const Stats = () => {
                 }}
                 transition={{ duration: 0.4 }}
               >
-                <dd className="text-4xl font-extrabold font-montserrat tracking-tight text-[var(--color-primary-900)]">
+                <dd className="text-4xl sm:text-4xl md:text-4xl font-extrabold font-montserrat tracking-tight text-[var(--color-primary-900)]">
                   {stat.value}
                 </dd>
-                <dt className="mt-2 text-sm font-semibold text-neutral-500">{stat.name}</dt>
+                <dt className="mt-2 text-xs sm:text-sm md:text-base font-medium text-neutral-500">
+                  {stat.name}
+                </dt>
               </motion.div>
             ))}
           </motion.dl>

@@ -103,7 +103,7 @@ export default function JusInstantForm() {
         <div className="mt-10 flex justify-end">
           <Button
             type="submit"
-            className="inline-flex items-center rounded-md bg-[var(--color-primary-600)] px-4 py-2 text-white text-sm font-medium  hover:bg-[var(--color-primary-500)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary-600)]"
+            className="w-full md:w-auto inline-flex items-center rounded-md bg-[var(--color-primary-600)] px-4 py-2 text-white text-sm font-medium  hover:bg-[var(--color-primary-500)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary-600)]"
             icon={Play}
             iconPosition='start'
           >
