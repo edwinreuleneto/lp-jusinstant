@@ -2,27 +2,27 @@ export const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "Conte o que aconteceu",
+      title: "Conte sua história",
       description:
-        "Trabalhou, foi demitido, sentiu que algo tá errado? Escreve aqui do seu jeito.",
+        "Diga com suas palavras o que aconteceu com você na empresa.",
     },
     {
       number: "02",
-      title: "Envie documentos (se tiver)",
+      title: "Envie documentos (opcional)",
       description:
-        "Pode anexar holerite, print do WhatsApp, aviso de demissão... o que tiver.",
+        "Anexe o que tiver: prints, holerites, comunicações ou nada.",
     },
     {
       number: "03",
-      title: "Receba sua análise completa",
+      title: "Receba sua análise",
       description:
-        "Você vai descobrir se a empresa te deve algo, o que, e por quê. Tudo com embasamento real.",
+        "Você recebe, por e-mail, uma explicação clara sobre seus direitos. Se tiver algo a cobrar, a gente te orienta.",
     },
   ];
 
   return (
-    <section className="w-full bg-white py-12 relative">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-white py-12 relative bg-gradient-to-b from-[#F8FAFC] to-transparent">
+      <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 align-center grid">
         {/* Título e descrição */}
         <div className="text-center mb-16 px-4">
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-primary-900)]">
@@ -33,7 +33,7 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        <div className="relative px-20 mx-auto">
+        <div className="relative px-0 md:px-2 mx-auto">
           <div className="hidden sm:block absolute top-5 left-0 right-0 h-px bg-neutral-200 z-0 mx-auto max-w-[50%]" />
 
           <div className="relative flex flex-col sm:flex-row sm:justify-between items-start gap-16 sm:gap-0">

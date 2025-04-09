@@ -35,8 +35,8 @@ const faqs = [
 
 export const FaqSection = () => {
   return (
-    <section className="bg-white">
-      <div className="mx-auto container px-8 py-12 sm:py-20 lg:px-8 lg:py-20">
+    <section className="bg-gray-50">
+      <div className="mx-auto max-w-[1380px] px-8 py-12 sm:py-20 lg:px-8 lg:py-20">
         <h2 className="text-4xl font-bold tracking-tight text-[var(--color-primary-900)] sm:text-5xl">
           Perguntas frequentes
         </h2>

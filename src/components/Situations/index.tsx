@@ -76,7 +76,7 @@ const items = [
 
 export const Situations = () => {
   return (
-    <section className="w-full py-20 pb-32 bg-gradient-to-t from-[#F8FAFC] to-transparent">
+    <section className="w-full py-20 pb-32">
       <div className="xl:max-w-[1380px] mx-auto w-screen px-4 lg:px-8">
         {/* Cabeçalho */}
         <motion.div

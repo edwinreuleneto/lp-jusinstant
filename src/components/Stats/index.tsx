@@ -11,7 +11,7 @@ export const Stats = () => {
   ];
 
   return (
-    <section className="border-y border-[#e1f1ee] bg-[#F2F8F7] py-14 sm:py-20">
+    <section className="border-b shadow-accent border-[#ebebeb] bg-[#f8f9fb] py-14 sm:py-10">
       <div className="xl:max-w-[1380px] mx-auto w-screen px-4 sm:px-6 lg:px-8">
         <div className="mx-auto">
           <motion.dl

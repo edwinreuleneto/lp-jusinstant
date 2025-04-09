@@ -68,8 +68,8 @@ const testimonials = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-24 sm:py-20 pb-28 bg-gradient-to-t to-[#FBF8F5] from-transparent border-t border-[#f3ede7]">
-      <div className="container mx-auto px-6 lg:px-8">
+  <section className="py-24 sm:py-20 pb-28 bg-gradient-to-b to-[#FBF8F5] from-[#FBF8F5] border-t border-[#f3ede7]">
+      <div className="max-w-[1380px] mx-auto px-6 lg:px-8">
         <div className="mx-auto text-center">
           <h2 className="text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl">
             Quem já usou aprova
