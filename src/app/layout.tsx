@@ -1,11 +1,12 @@
 // Dependencies
 import type { Metadata } from "next";
-import { Poppins, Montserrat } from "next/font/google";
+import { Analytics } from '@vercel/analytics/next';
 
 // Styles
 import '@/style/globals.css';
 
 // Fonts
+import { Poppins, Montserrat } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
@@ -81,6 +82,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${montserrat.variable} antialiased bg-white text-zinc-900`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

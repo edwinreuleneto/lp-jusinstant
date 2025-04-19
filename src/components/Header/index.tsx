@@ -9,7 +9,7 @@ export function Header() {
   return (
     <BlurFade duration={1} className="fixed left-0 top-0 z-50 w-full">
       <header className="fixed left-0 top-0 z-50 w-full border-b border-gray-100 bg-white">
-        <div className="mx-auto flex h-16 xl:max-w-[1380px] w-screen items-center justify-between sm:px-6 lg:px-8 px-8">
+        <div className="mx-auto flex h-16 xl:max-w-[1380px] w-screen items-center justify-between sm:px-6 lg:px-8 px-4">
           {/* Logo / Branding */}
           <div className="flex items-center">
             <Link
@@ -23,10 +23,9 @@ export function Header() {
           {/* Navegação */}
           <nav className="hidden md:flex items-center space-x-8">
             {[
-              { href: "#features", label: "Recursos" },
-              { href: "#how-it-works", label: "Como Funciona" },
-              { href: "#pricing", label: "Preços" },
-              { href: "#testimonials", label: "Depoimentos" },
+              { href: "#como-funciona", label: "Como Funciona" },
+              { href: "#precos", label: "Preços" },
+              { href: "#depoimentos", label: "Depoimentos" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
@@ -41,7 +40,7 @@ export function Header() {
           {/* Ações */}
           <div className="flex items-center space-x-4">
             <Button variant="primary" aria-label="Começar consulta jurídica">
-              Começar Agora
+              Analisar agora
             </Button>
           </div>
         </div>

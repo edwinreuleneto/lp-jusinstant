@@ -76,7 +76,7 @@ const items = [
 
 export const Situations = () => {
   return (
-    <section className="w-full py-20 pb-32">
+    <section className="w-full pt-28 pb-32">
       <div className="xl:max-w-[1380px] mx-auto w-screen px-4 lg:px-8">
         {/* Cabeçalho */}
         <motion.div
@@ -86,10 +86,11 @@ export const Situations = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-neutral-800 font-montserrat">
+          <span className="text-[var(--color-primary-600)] font-semibold text-md">Histórias que já atendemos</span>
+          <h2 className="text-[var(--color-primary-900)] text-3xl sm:text-4xl font-bold font-montserrat max-w-[420px] md:max-w-[100%] mx-auto">
             Situações que analisamos com nossa IA
           </h2>
-          <p className="mt-2 text-md text-neutral-700">
+          <p className="mt-2 text-md font-medium text-neutral-600">
             A JusInstant foi treinada para identificar os principais problemas nas relações de trabalho no Brasil.
           </p>
         </motion.div>

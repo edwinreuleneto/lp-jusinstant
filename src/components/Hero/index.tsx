@@ -8,23 +8,10 @@ import { TextAnimate } from "../ui/magicui/text-animate";
 
 const Hero = () => {
   return (
-    <section className="relative z-20 w-full bg-gradient-to-l from-[#D1D1D9] to-[#f8f9fb] overflow-hidden mt-16">
-      <div className="relative z-10 xl:max-w-[1380px] mx-auto flex w-full flex-col-reverse items-center gap-12 px-6 sm:px-8 py-20 md:grid md:grid-cols-[1fr] lg:grid-cols-[1fr] xl:grid-cols-[1fr]">
-        <div className="mx-auto text-center lg:mx-0 lg:text-left py-20">
-          <BlurFade
-            direction="down"
-            delay={0.6}
-            className="relative flex-cols md:flex items-center justify-center gap-2 py-2 text-sm text-gray-600 lg:justify-start text-center"
-          >
-            <span className="font-semibold text-[var(--color-primary-500)]">🔒  100% seguro e protegido pela LGPD</span>
-            <span aria-hidden="true" className="h-4 w-px bg-gray-900/10" />
-            <a href="#" className="relative flex items-center gap-x-1 text-center grid">
-              <span aria-hidden="true" className="absolute inset-0" />
-              Sem espera, sem advogado, sem burocracia
-            </a>
-          </BlurFade>
-
-          <h1 className="mt-2 text-balance break-normal text-3xl font-bold leading-tight text-[var(--color-primary-900)] sm:text-4xl md:text-5xl max-w-2xl">
+    <section className="items-center md:min-h-auto relative z-20 w-full bg-gradient-to-l from-[#D1D1D9] to-[#f8f9fb] overflow-hidden mt-16">
+      <div className="relative z-10 xl:max-w-[1380px] mx-auto flex w-full flex-col-reverse items-center gap-12 px-4 md:px-6 sm:px-8 py-8 md:grid md:grid-cols-[1fr] lg:grid-cols-[1fr] xl:grid-cols-[1fr]">
+        <div className="mx-auto lg:mx-0 lg:text-left py-12 md:py-20 gap-4 md:gap-0 grid">
+          <h1 className="text-balance break-normal text-4xl font-bold leading-tight text-[var(--color-primary-900)] sm:text-4xl md:text-5xl md:max-w-2xl w-full">
             <TextAnimate
               by="word"
               once
@@ -62,13 +49,23 @@ const Hero = () => {
             </p>
           </BlurFade>
 
+          <BlurFade
+            direction="down"
+            delay={0.6}
+            className="hidden md:flex mt-4 relative flex-cols items-center justify-center gap-2 py-2 text-sm text-gray-600 lg:justify-start text-center"
+          >
+            <span className="font-semibold text-[var(--color-primary-500)]">🔒  100% seguro e protegido pela LGPD</span>
+            <span aria-hidden="true" className="h-4 w-px bg-gray-900/10" />
+            <a href="#" className="relative items-center gap-x-1 text-center grid">
+              <span aria-hidden="true" className="absolute inset-0" />
+              Sem espera, sem advogado, sem burocracia
+            </a>
+          </BlurFade>
+
           <BlurFade direction="up" delay={0.6} className="mt-10 sm:mt-12">
             <div className="grid grid-cols-[1fr] justify-center gap-4 md:grid-cols-[auto_auto] lg:justify-start">
               <Button variant="primary" size="lg" aria-label="Iniciar consulta jurídica">
-                Quero minha análise agora
-              </Button>
-              <Button variant="outline" size="lg" iconPosition="end" aria-label="Conhecer">
-                Conhecer
+                Analisar agora
               </Button>
             </div>
           </BlurFade>

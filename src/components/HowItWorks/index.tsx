@@ -23,14 +23,11 @@ export const HowItWorks = () => {
   return (
     <section className="w-full bg-white py-12 relative bg-gradient-to-b from-[#F8FAFC] to-transparent">
       <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8 align-center grid">
-        {/* Título e descrição */}
         <div className="text-center mb-16 px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-primary-900)]">
+          <span className="text-[var(--color-primary-600)] font-semibold text-md text-center">Simples e eficiente.</span>
+          <h2 className="text-[var(--color-primary-900)] text-3xl sm:text-4xl font-bold font-montserrat max-w-[420px] md:max-w-[100%] mx-auto">
             Como funciona
           </h2>
-          <p className="mt-2 text-neutral-600">
-            Um processo simples e eficiente para descobrir seus direitos.
-          </p>
         </div>
 
         <div className="relative px-0 md:px-2 mx-auto">

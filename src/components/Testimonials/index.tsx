@@ -69,10 +69,10 @@ const testimonials = [
 export const Testimonials = () => {
   return (
   <section className="py-24 sm:py-20 pb-28 bg-gradient-to-b to-[#FBF8F5] from-[#FBF8F5] border-t border-[#f3ede7]">
-      <div className="max-w-[1380px] mx-auto px-6 lg:px-8">
+      <div className="max-w-[1380px] mx-auto px-4 lg:px-8">
         <div className="mx-auto text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-neutral-800 sm:text-5xl">
-            Quem já usou aprova
+          <h2 className="text-[var(--color-primary-900)] text-3xl sm:text-4xl font-bold font-montserrat max-w-[420px] md:max-w-[100%] mx-auto">
+            Quem já usou, aprova!
           </h2>
           <p className="mt-4 text-lg text-neutral-700">
             Milhares de trabalhadores já descobriram seus direitos com o JusInstant.
